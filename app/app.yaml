@@ -1,0 +1,7 @@
+runtime: python36
+entrypoint: gunicorn -b :$PORT app:app
+
+service: text-predict-digitalent
+
+runtime_config:
+  python_version: 3
